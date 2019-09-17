@@ -4,15 +4,14 @@ This repository contains the source code of [SOČ](http://www.soc.cz/) paper tem
 ## Compiling the paper
 If you want to use the project as a template for your own SOČ paper, or to compile the paper, there are some things you should know before doing so.
 
+```
+python3 compile.py
+```
 
 ### Typesetting system
 The paper was converted to PDF using **LuaTeX**. It was chosen mainly for its out-of-the-box UFT-8 support (which pdfTeX lacks). It comes with most of the major TeX distributions like TeX Live and MiKTeX, so you should already have it installed. If you need any help with setup, you can contact me on [j.cerny.zdar@gmail.com](email:j.cerny.zdar@gmail.com)
 
 [compile.py](scripts/compile.py) is the script that is used to build the paper. I would recommend you either use it directly or run the same commands in the command line to properly render things like bibliography or the list of acronyms.
-
-```
-python3 compile.py
-```
 
 ### Code Highlights
 _If you don't need code highlights, simply remove `\usepackage{minted}` from `paper.tex` and skip the rest of this section._
@@ -34,4 +33,4 @@ You can also use a different system font by changing the line `\setmainfont{CMU 
 The paper also uses **FontAwesome5** and the fontawesome5 package to typeset certain symbols and icons. You can either remove the line `\usepackage{fontawesome5}` from `paper.tex` if you don't plan on using any of the icons, or [install the font](https://fontawesome.com/download) on your system.
 
 ## About
-This tamplate would not be possible to make without [Tomáš Sláma](https://slama.dev/) and his awesome work and support. Every time you download this template, you should stand up and salute his honor.
+This tamplate would not be possible to make without [Tomáš Sláma](https://slama.dev/) and his [awesome work](https://github.com/xiaoxiae/soc-paper-2019) and support. Every time you download this template, you should stand up and salute his honor.
