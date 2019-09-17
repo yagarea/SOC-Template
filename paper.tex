@@ -266,30 +266,41 @@
 \TeX}
 \makeatother
 
+%Macro
+\newcommand{\frontpage}[5]{
+	\begin{center}
+	{\fontsize{18}{21.6} \selectfont STŘEDOŠKOLSKÁ ODBORNÁ ČINNOST}\\
+	\vspace{\baselineskip}
+	{\fontsize{14}{16.8} \selectfont Obor č. {#specialization}}\\
+
+	\vspace{16em}
+	{\fontsize{20}{24} \selectfont {#main_tittle}}
+	 \vfill
+	\end{center}
+
+	\fontsize{16}{19.2} \selectfont
+	#{your_name}\\
+	#{country}
+	\hfill
+	{#place} \the\year
+
+	\cleardoublepage
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% D O C U M E N T %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
   \sloppy % fixes some lines going to the margins
 
   \bfseries
-
-  \begin{center}
-    {\fontsize{18}{21.6} \selectfont STŘEDOŠKOLSKÁ ODBORNÁ ČINNOST}\\%
-    \vspace{\baselineskip}
-    {\fontsize{14}{16.8} \selectfont Obor č. 18: Informatika}\\%
-
-    \vspace{16em}
-    {\fontsize{20}{24} \selectfont Robotika Jednoduše}%
-    \vfill
-  \end{center}
-
-  \fontsize{16}{19.2} \selectfont
-  Tomáš Sláma\\
-  Liberecký Kraj
-  \hfill
-  Turnov 2019
-
-  \cleardoublepage
+  
+  \newcommand{\frontpage}[5]{
+  	specialization='18: Informatika', 
+  	main_tittle='My awesome work',
+  	your_name='John Doe',
+  	country='Středočeský kraj',
+  	place='Kolín'
+  	}
 
   \begin{center}
     {\fontsize{18}{21.6} \selectfont STŘEDOŠKOLSKÁ ODBORNÁ ČINNOST}\\%
