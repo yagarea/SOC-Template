@@ -34,4 +34,4 @@ You can also use a different system font by changing the line `\setmainfont{CMU 
 The paper also uses **FontAwesome5** and the fontawesome5 package to typeset certain symbols and icons. You can either remove the line `\usepackage{fontawesome5}` from `paper.tex` if you don't plan on using any of the icons, or [install the font](https://fontawesome.com/download) on your system.
 
 ## About
-This tamplate would not be possible to make without [Tomáš Sláma](slama.dev) and his awesome work and support. Every time you download this template, you should stand up and salute his honor.
+This tamplate would not be possible to make without [Tomáš Sláma](https://slama.dev/) and his awesome work and support. Every time you download this template, you should stand up and salute his honor.
